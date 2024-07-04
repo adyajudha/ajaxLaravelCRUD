@@ -181,35 +181,7 @@
             });
              
         });
-        // $('#productForm').submit(function(e) {
-        //     e.preventDefault();
-        //     var formData = new FormData(this);
-        //     $('#btn-save').html('Sending..');
-        //     $.ajax({
-        //         type: 'POST',
-        //         url: SITEURL + "products/Store",
-        //         data: formData,
-        //         cache: false,
-        //         contentType: false,
-        //         processData: false,
-        //         success: (data) => {
-        //             $('#btn-save').html('Save Changes');
-        //             $('#productForm').trigger("reset");
-        //             $('#ajax-product-modal').modal('hide');
-        //             $('#laravel_11_datatable').DataTable().ajax.reload();
-        //             Swal.fire({
-        //                 icon: 'success',
-        //                 title: `${data.message}`,
-        //                 showConfirmButton: false,
-        //                 timer: 2000
-        //             });
-        //         },
-        //         error: function(data) {
-        //             $('#btn-save').html('Save Changes');
-        //             console.log('Error:', data);
-        //         }
-        //     });
-        // });
+        
         $('body').on('submit', '#productForm', function(e) {
             e.preventDefault();
             var actionType = $('#btn-save').val();
