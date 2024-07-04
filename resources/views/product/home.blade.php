@@ -154,11 +154,11 @@
                     $('#product_id').val(data.id);
                     $('#title').val(data.title);
                     $('#category').val(data.category);
+                    $('#hidden_image').val(data.image);
                     $('#price').val(data.price);
                     $('#modal-preview').attr('alt', 'No image available');
                     if (data.image) {
                         $('#modal-preview').attr('src', SITEURL + 'public/product/' + data.image);
-                        $('#hidden_image').attr('src', SITEURL + 'public/product/' + data.image);
                     }
                 })
             });
@@ -181,7 +181,7 @@
             });
              
         });
-        
+
         $('body').on('submit', '#productForm', function(e) {
             e.preventDefault();
             var actionType = $('#btn-save').val();
